@@ -1,0 +1,308 @@
+header{
+  flex: 0 0 auto;
+  display: flex; 
+  justify-content: space-between;
+  background-color: #8942d6;
+  align-items: center;
+  height: 80px;
+}
+footer{
+	flex: 0 0 auto;
+	display: flex;
+	justify-content: center;
+	background-color: #380470;
+	align-items: center;
+	height: 150px;
+	width: 100%;
+}
+a{
+	color: White;
+	text-decoration: none;
+	font-size: 1.7vw;
+	position: relative;
+}
+#logo{
+	width:110px;
+	height:60px;
+}
+#heading{	
+	position: absolute;
+	left: 100px;
+	font-size: 2.5vw;
+}
+body{
+	margin: 0;
+	background-color: #5a0dac;
+	font-family: Book Antiqua;
+	display: flex; 
+	flex-direction: column; 
+	height: 100%; 
+	height: -webkit-fill-available;
+}
+text{
+	color: White;
+}
+#predskazaniye{
+	font-size: 2.5vw;
+	font-weight: bold;
+	color: Black;
+	position: relative; 
+	top: -190px;
+	cursor: pointer;
+}
+.cloud{
+	text-align: center;
+}
+#cloud{
+	position: relative; 
+	top: 50px;
+	cursor: pointer;
+	width:600px;
+}
+h2{ 
+	text-align: center;
+}
+#zag1, #resultat{
+	text-align: center;
+	font-size: 2.3vw;
+	font-weight: bold;
+}
+.about, .contacts, .reg, .log-in{
+	width: 70%;
+    padding: 2%; 
+	margin: 5%;
+	margin-left: 13%;
+    border-radius: 10px;
+	background-color: White;
+	position: relative;
+	vertical-align: middle;
+	font-family: Book Antiqua;
+}
+
+.log-in{
+	width: 30%;
+	margin-left: 33%;	
+}
+.reg{
+	width: 60%;
+	margin-left: 18%;
+}
+.textabout{
+	font-size: 1.5vw;
+	line-height: 1.5;
+}
+.radiobtn{
+	font-size: 1.3vw;
+	color: black;
+}
+.info{
+	color:purple;
+	font-size: 18px;
+	padding:0;
+}
+.container{
+	max-width: 6000px;
+	margin: auto;
+	position:relative;
+	top: -180px;
+	text-align: center;
+}
+input[type=text], input[type=password]{
+  width: 50%;
+  padding: 9px;
+  font-size: 15px;
+  border: 1px solid #808080;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  border-radius: 10px;
+}
+.pole2{
+	 margin-left: 20px;
+}
+button:hover {
+  background-color: #9370DB;
+}
+input[type=button]:hover{
+	background-color: #9370DB;
+}
+@media screen and (max-width: 600px) {
+  .questions, .fields, button {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+.questions{
+	 display: block;
+	 position: relative;
+	 right: -7%;
+ }
+#tzag{
+	 margin-top: 2%;
+ }
+ .fields, .logf{
+	 display: flex;
+	 justify-content: flex-end;
+ }
+ .quest{
+	 display: flex;
+ }
+#zapf{
+	 font-size: 1.5vw;
+	 font-style: italic;
+ }
+button, input[type=button]{
+  padding: 12px 20px;
+  cursor: pointer;
+  position: relative;
+  right: -38%;
+  font-family: Book Antiqua;
+  font-size: 1.3vw;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+#msg{
+  position: relative;
+  right: -241px;
+  height: 100px;
+  right: 0.1%;
+}
+.mainmenu::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-bottom: 2px solid white;
+    content: '';
+    transform: scaleX(0);
+    opacity: 0;
+    transition: all .4s linear;
+}
+.mainmenu:hover::after {
+    transform: scaleX(1);
+    opacity: 1;
+}
+.footmenu:hover{
+	color: #7B68EE;
+}
+.social{
+	display: block;
+	padding: 2%;
+	width: 25%;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.social:hover{
+	background-color:#87e0fd;
+}
+.footmenu, .mainmenu{
+	padding: 10px;
+}
+.zag{
+	font-size: 1.5vw;
+}
+::-webkit-input-placeholder {
+  font-size: 1.3vw;
+  font-family: Book Antiqua;
+}
+:-moz-placeholder {/*Firefox 18-*/
+  font-size: 1.3vw;
+  font-family: Book Antiqua;
+}
+::-moz-placeholder {/*Firefox 19+*/
+  font-size: 1.3vw;
+  font-family: Book Antiqua; 
+}
+:-ms-input-placeholder {  
+  font-size: 1.3vw;
+  font-family: Book Antiqua;  
+}
+input[placeholder] {
+  font-size: 1.3vw;
+  font-family: Book Antiqua;  
+}
+span.dot{
+   position: absolute;
+   color: red;
+   right: 4%;
+}
+#send{
+	margin-top: 2%;
+	right: -42%;
+}
+#pgg, #closer{
+	margin: 2%;
+	width: 20%;
+}
+#send2{
+	margin-top: 2%;
+	right: -34%;
+}
+.fields, .logf{
+	font-size: 1.5vw;
+	padding: .5em;
+	padding: .5em 1em .5em 0;
+}
+.fields > input {
+  flex: 2;
+}
+.fields> label {
+	 position: relative;
+	right: -10%;
+	flex: 1.5;
+}
+.logf > input {
+  flex: 2;
+}
+.logf > label {
+  position: relative;
+	right: -5%;
+	flex: 1;
+}
+.close{
+	position: absolute;
+	right: 2%;
+	top: 2%;
+	width: 32px;
+	height: 32px;
+	opacity: 0.3;
+}
+.close:hover {
+opacity: 1;
+}
+.close:before, .close:after {
+position: absolute;
+left: 15px;
+content: ' ';
+height: 33px;
+width: 2px;
+background-color: #333;
+}
+.close:before {
+transform: rotate(45deg);
+}
+.close:after {
+transform: rotate(-45deg);
+}
+.sessiapred, .answer{
+	background-color:white;
+	width: 70%;
+    padding: 2%; 
+	margin: 5%;
+	margin-left: 13%;
+    border-radius: 10px;
+	position: relative;
+	vertical-align: middle;
+	font-family: Book Antiqua;
+	display: none;
+	z-index:99999999;
+}
+.answer{
+	display: none;
+}
+#answ1{
+	font-style: italic;
+	text-align: center;
+}
+#closer{
+	display: none;
+}

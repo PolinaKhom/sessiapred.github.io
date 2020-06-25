@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Книга предсказаний результатов сессии</title>
+		<!-- Подключение библиотеки jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<!-- Подключение библиотеки jQuery UI -->
+		<script src="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/jquery-ui.min.js"></script>
+		<link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/themes/sunny/jquery-ui.css">
+		<!-- Иконка сайта -->
+		<link rel="icon" href="https://sun9-69.userapi.com/c206716/v206716456/13b989/_WMteTHGCVQ.jpg" type="image/x-icon">
+		<!-- Подключение таблицы стилей и файла сценариев -->
+		<link rel="stylesheet" href="style.css">
+		<script src="script.js"></script>
+		<!-- Подключение плагина Brazzers-Carousel для анимации вращения книги -->
+		<link rel="stylesheet" href="libs/Brazzers-Carousel/jQuery.Brazzers-Carousel.min.css">
+		<script src="libs/Brazzers-Carousel/jQuery.Brazzers-Carousel.min.js"></script>
+		<!-- Подключение дополнительного файла сценариев -->
+		<script src="pred.js"></script>
+	</head>
+	<body>
+		<header>
+			<img src="images/Crystal 2.png" alt="Лого" id="logo">
+			<text id="heading">Книга предсказаний</text>
+			<nav>
+				<a href="index.html" class="mainmenu">Главная</a>
+				<a href="about.html" class="mainmenu">О книге предсказаний</a>
+				<a href="contacts.html" class="mainmenu">Контакты</a>
+				<a href="registration.html" class="mainmenu">Регистрация</a>
+				<a href="login.html" class="mainmenu">Вход</a>
+			</nav>
+		</header>
+		<div class="cloud">
+			<img src="images/Cloud.png" id="cloud" hspace="70" vspace="50" align="bottom"/></td>
+			<p id="predskazaniye">Получить предсказание!</p>
+		</div>
+		<form class="sessiapred" name="callback">
+			<span class="close"></span>
+			<div class="anket">			
+				<div id="page1">
+				<p id="zag1">Получить предсказание</p>
+					<p class="textabout">Приветствую вас, дорогой друг!</p>
+					<p class="textabout">Для того, чтобы Книга могла спрогнозировать предсказание, вам нужно ответить на несколько вопросов от нее.</p>
+				</div>
+				<div id="page2">
+					<p id="zag1">Вопрос №1</p>
+					<p class="textabout">По какому предмету вы бы хотели узнать ответ?</p>
+					<input type = "text" class="quest" placeholder="Введите название предмета" id="subject" name="sbj"/>
+				</div>
+				<div id="page3">
+					<p id="zag1">Прекрасно! Следующий вопрос</p>
+					<p class="textabout">Какая оценка у вас выходит за семестр без экзамена?</p>
+					<input type = "text" class="quest" placeholder="Введите оценку за семестр" id="mark" name="mrk"/>
+				</div>
+				<div id="page4">
+					<p id="zag1">Вопрос №3</p>
+					<p class="textabout">Итак, с предметом и оценкой Книга ознакомлена, а строгий ли преподаватель?</p>
+					<text class="radiobtn"><input type="radio" name="teacher" value="1"/>Да, жуутко строгий!</text><br>
+					<text class="radiobtn"><input type="radio" name="teacher" value="2"/>Нет, очень добрый и мягкий</text><br>
+					<text class="radiobtn"><input type="radio" name="teacher" value="3"/>Все зависит от отношения студентов к предмету</text><br>
+					<text class="radiobtn"><input type="radio" name="teacher" value="4"/>Понятия не имею, я плохо с ним знаком.</text><br>
+				</div>
+				<div id="page5">
+					<p id="zag1">Вопрос №4</p>
+					<p class="textabout">Как хорошо вы подготовились к сессии?</p>
+					<text class="radiobtn"><input type="radio" name="sessia" value="1">Отлично, я думаю, что знаю ответы на любой вопрос преподавателя</text><br>
+					<text class="radiobtn"><input type="radio" name="sessia" value="2">Хорошо, но все же сомневаюсь в своих силах</text><br>
+					<text class="radiobtn"><input type="radio" name="sessia" value="3">Я не до конца знаю материал и надеюсь на свою удачу с:</text><br>
+					<text class="radiobtn"><input type="radio" name="sessia" value="4">Не готов совершенно :с</text><br>
+				</div>
+				<div id="page6">
+					<p id="zag1">Вопрос №5</p>
+					<p class="textabout">И последний вопрос: сильно волнуеетесь?</p>
+					<text class="radiobtn"><input type="radio" name="stress" value="1">Не волнуюсь, я в себе абсолютно уверен</text><br>
+					<text class="radiobtn"><input type="radio" name="stress" value="2">Волнуюсь немного, но в целом, все в порядке</text><br>
+					<text class="radiobtn"><input type="radio" name="stress" value="3">Очень волнуюсь, даже немножко начинаю паниковать</text><br>
+					<text class="radiobtn"><input type="radio" name="stress" value="4">Ааааааа!</text><br>
+				</div>
+			</div>
+			<div class="answer">
+				<p id="resultat">Ваше предсказание</p>
+				<p id="answ1" class="textabout">Итак... Похоже, что волноваться не о чем: удача будет сопутствовать во всем и экзамен
+				с вероятностью 95% пройдет успешно! Вы отлично подготовлены и сможете сдать экзамен даже у самого строгого преподавателя!</p>			
+			</div>
+			<input type="button" id="pgg" onclick="buy();" value="Далее"/>
+			<input type="button" id="closer" value="Назад"/>
+			</form>	
+		<div class="container">
+		<div class="thumb-item">
+			<img src="images/book/1.png" alt="Alt"/>
+			<img src="images/book/2.png" alt="Alt"/>
+			<img src="images/book/3.png" alt="Alt"/>
+			<img src="images/book/4.png" alt="Alt"/>
+			<img src="images/book/5.png" alt="Alt"/>
+			<img src="images/book/6.png" alt="Alt"/>
+			<img src="images/book/7.png" alt="Alt"/>
+			<img src="images/book/8.png" alt="Alt"/>
+			<img src="images/book/9.png" alt="Alt"/>
+			<img src="images/book/10.png" alt="Alt"/>
+			<img src="images/book/11.png" alt="Alt"/>
+			<img src="images/book/12.png" alt="Alt"/>
+			<img src="images/book/13.png" alt="Alt"/>
+			<img src="images/book/14.png" alt="Alt"/>
+			<img src="images/book/15.png" alt="Alt"/>
+			<img src="images/book/16.png" alt="Alt"/>
+			<img src="images/book/17.png" alt="Alt"/>
+			<img src="images/book/18.png" alt="Alt"/>
+			<img src="images/book/19.png" alt="Alt"/>
+			<img src="images/book/20.png" alt="Alt"/>
+			<img src="images/book/21.png" alt="Alt"/>
+			<img src="images/book/22.png" alt="Alt"/>
+			<img src="images/book/23.png" alt="Alt"/>
+			<img src="images/book/24.png" alt="Alt"/>
+			<img src="images/book/25.png" alt="Alt"/>
+			<img src="images/book/26.png" alt="Alt"/>
+			<img src="images/book/27.png" alt="Alt"/>
+			<img src="images/book/28.png" alt="Alt"/>
+			<img src="images/book/29.png" alt="Alt"/>
+			<img src="images/book/30.png" alt="Alt"/>
+			<img src="images/book/31.png" alt="Alt"/>
+			<img src="images/book/32.png" alt="Alt"/>
+			<img src="images/book/33.png" alt="Alt"/>
+			<img src="images/book/34.png" alt="Alt"/>
+			<img src="images/book/35.png" alt="Alt"/>
+			<img src="images/book/36.png" alt="Alt"/>
+			<img src="images/book/37.png" alt="Alt"/>
+			<img src="images/book/38.png" alt="Alt"/>
+			<img src="images/book/39.png" alt="Alt"/>
+			<img src="images/book/40.png" alt="Alt"/>
+			<img src="images/book/41.png" alt="Alt"/>
+			<img src="images/book/42.png" alt="Alt"/>
+			<img src="images/book/43.png" alt="Alt"/>
+			<img src="images/book/44.png" alt="Alt"/>
+			<img src="images/book/45.png" alt="Alt"/>
+			<img src="images/book/46.png" alt="Alt"/>
+			<img src="images/book/47.png" alt="Alt"/>
+			<img src="images/book/48.png" alt="Alt"/>
+			<img src="images/book/49.png" alt="Alt"/>
+			<img src="images/book/50.png" alt="Alt"/>
+			<img src="images/book/51.png" alt="Alt"/>
+			<img src="images/book/52.png" alt="Alt"/>
+			<img src="images/book/53.png" alt="Alt"/>
+			<img src="images/book/54.png" alt="Alt"/>
+			<img src="images/book/55.png" alt="Alt"/>
+			<img src="images/book/56.png" alt="Alt"/>
+			<img src="images/book/57.png" alt="Alt"/>
+			<img src="images/book/58.png" alt="Alt"/>
+			<img src="images/book/59.png" alt="Alt"/>
+			<img src="images/book/60.png" alt="Alt"/>
+			<img src="images/book/61.png" alt="Alt"/>
+			<img src="images/book/62.png" alt="Alt"/>
+			<img src="images/book/63.png" alt="Alt"/>
+			<img src="images/book/64.png" alt="Alt"/>
+			<img src="images/book/65.png" alt="Alt"/>
+			<img src="images/book/66.png" alt="Alt"/>
+			<img src="images/book/67.png" alt="Alt"/>
+			<img src="images/book/68.png" alt="Alt"/>
+			<img src="images/book/69.png" alt="Alt"/>
+			<img src="images/book/70.png" alt="Alt"/>
+			<img src="images/book/71.png" alt="Alt"/>
+			<img src="images/book/72.png" alt="Alt"/>
+			<img src="images/book/73.png" alt="Alt"/>
+			<img src="images/book/74.png" alt="Alt"/>
+			<img src="images/book/75.png" alt="Alt"/>
+			<img src="images/book/76.png" alt="Alt"/>
+			<img src="images/book/77.png" alt="Alt"/>
+			<img src="images/book/78.png" alt="Alt"/>
+			<img src="images/book/79.png" alt="Alt"/>
+			<img src="images/book/80.png" alt="Alt"/>
+			<img src="images/book/81.png" alt="Alt"/>
+			<img src="images/book/82.png" alt="Alt"/>
+			<img src="images/book/83.png" alt="Alt"/>
+			<img src="images/book/84.png" alt="Alt"/>
+			<img src="images/book/85.png" alt="Alt"/>
+			<img src="images/book/86.png" alt="Alt"/>
+			<img src="images/book/87.png" alt="Alt"/>
+			<img src="images/book/88.png" alt="Alt"/>
+			<img src="images/book/89.png" alt="Alt"/>
+		</div>
+		</div>
+		<script>
+			  $(".thumb-item").brazzersCarousel();
+		</script>
+		<footer>
+			<div class="social-nw">				
+				<a href="https://vk.com/sessiapred" target="_blank"><img src="images/social/vk.png" class="social"/></a>
+				<a href="https://www.facebook.com/sessiapred.book" target="_blank"><img src="images/social/fb.png" class="social"/></a>
+				<a href="https://twitter.com/sessiapred" target="_blank"><img src="images/social/tw.png" class="social"/></a>
+				<a href="https://www.instagram.com/session_pred/" target="_blank"><img src="images/social/ig.png" class="social"/></a>
+			</div>	
+			<a href="index.html" class="footmenu"> Главная </a>
+			<a href="about.html" class="footmenu">О книге предсказаний</a>
+			<a href="contacts.html" class="footmenu">Контакты</a>
+			<a href="registration.html" class="footmenu">Регистрация</a>
+			<a href="login.html" class="footmenu">Вход</a>
+		</footer>
+	</body>
+</html>
